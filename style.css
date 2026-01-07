@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace; /* Monospace keeps numbers from jumping */
+}
+
+body {
+    background-color: #050505; /* Deep black for contrast */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-container {
+    text-align: center;
+}
+
+#clock {
+    font-size: 8rem;
+    font-weight: bold;
+    color: #00ecff; /* Cyan base color */
+    /* The Neon Glow Effect: Layering different blur levels */
+    text-shadow: 0 0 10px #00ecff,
+                 0 0 20px #00ecff,
+                 0 0 40px #00ecff,
+                 0 0 80px #00ecff;
+}
+
+#date {
+    font-size: 1.5rem;
+    color: #00ecff;
+    letter-spacing: 5px;
+    margin-top: 10px;
+    opacity: 0.7;
+}
