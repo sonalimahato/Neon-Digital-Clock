@@ -5,7 +5,6 @@ A clean and modern digital clock built with a soft neon aesthetic. This project 
 ## 🚀 Live Demo
 ![Neon Digital Clock Screenshot](https://github.com/sonalimahato/Neon-Digital-Clock/blob/main/clock%20preview.jpeg)
 Check out the live project here: (https://sonalimahato.github.io/Neon-Digital-Clock/)
-v
 
 ## ✨ Features
 - **Real-Time Clock:** Displays hours, minutes, and seconds accurately.
