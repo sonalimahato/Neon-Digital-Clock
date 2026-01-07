@@ -19,13 +19,17 @@ body {
 
 #clock {
     font-size: 8rem;
-    font-weight: bold;
-    color: #00ecff; /* Cyan base color */
-    /* The Neon Glow Effect: Layering different blur levels */
-    text-shadow: 0 0 10px #00ecff,
-                 0 0 20px #00ecff,
-                 0 0 40px #00ecff,
-                 0 0 80px #00ecff;
+    font-weight: 900; /* Extra bold for better visibility */
+    color: #00ecff; 
+    
+    /* Reduced glow: We only use 3 layers now instead of 4 */
+    /* Layer 1: Sharp outline | Layer 2: Medium glow | Layer 3: Soft outer glow */
+    text-shadow: 0 0 5px rgba(0, 236, 255, 0.8),
+                 0 0 15px rgba(0, 236, 255, 0.5),
+                 0 0 30px rgba(0, 236, 255, 0.3);
+    
+    /* Extra trick: A dark border around the letters (Text Stroke) */
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5); 
 }
 
 #date {
@@ -33,5 +37,8 @@ body {
     color: #00ecff;
     letter-spacing: 5px;
     margin-top: 10px;
-    opacity: 0.7;
+    
+    /* Lower opacity makes it less "shimmery" and easier on the eyes */
+    opacity: 0.6; 
+    text-shadow: 0 0 5px rgba(0, 236, 255, 0.5);
 }
